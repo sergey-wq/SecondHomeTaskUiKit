@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Traffic Light View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="TrafficLightViewController" customModule="SecondHomeTask" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lfp-Ei-zkC">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yGU-U0-e7y">
+                                        <rect key="frame" x="142" y="100" width="130" height="130"/>
+                                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="130" id="5kO-Xw-MTn"/>
+                                            <constraint firstAttribute="height" constant="130" id="mb1-2K-hDn"/>
+                                        </constraints>
+                                    </view>
+                                    <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WeV-T3-WUf">
+                                        <rect key="frame" x="142" y="290" width="130" height="130"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="130" id="QKg-yd-1VF"/>
+                                            <constraint firstAttribute="height" constant="130" id="Wlb-8Y-0rl"/>
+                                        </constraints>
+                                    </view>
+                                    <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oq0-S7-0zM">
+                                        <rect key="frame" x="142" y="480" width="130" height="130"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="130" id="Evq-go-ARb"/>
+                                            <constraint firstAttribute="height" constant="130" id="cOX-4O-9Ma"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U0J-7T-2eX">
+                                        <rect key="frame" x="122" y="680" width="170" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="170" id="FYY-Pd-Svu"/>
+                                            <constraint firstAttribute="height" constant="50" id="qDT-AP-nNc"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="25"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Start">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="changeTrafficLightButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ebc-bA-Nj5"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="yGU-U0-e7y" firstAttribute="centerX" secondItem="lfp-Ei-zkC" secondAttribute="centerX" id="2bs-a1-C3V"/>
+                                    <constraint firstItem="yGU-U0-e7y" firstAttribute="top" secondItem="lfp-Ei-zkC" secondAttribute="top" constant="100" id="G4E-1a-71e"/>
+                                    <constraint firstItem="U0J-7T-2eX" firstAttribute="top" secondItem="Oq0-S7-0zM" secondAttribute="bottom" constant="70" id="M37-jF-8ho"/>
+                                    <constraint firstItem="Oq0-S7-0zM" firstAttribute="centerX" secondItem="lfp-Ei-zkC" secondAttribute="centerX" id="XRx-IZ-8cX"/>
+                                    <constraint firstItem="WeV-T3-WUf" firstAttribute="centerX" secondItem="lfp-Ei-zkC" secondAttribute="centerX" id="ZMR-AQ-xAp"/>
+                                    <constraint firstItem="WeV-T3-WUf" firstAttribute="top" secondItem="yGU-U0-e7y" secondAttribute="bottom" constant="60" id="awr-mX-zHW"/>
+                                    <constraint firstItem="Oq0-S7-0zM" firstAttribute="top" secondItem="WeV-T3-WUf" secondAttribute="bottom" constant="60" id="e5b-kN-yNu"/>
+                                    <constraint firstItem="U0J-7T-2eX" firstAttribute="centerX" secondItem="lfp-Ei-zkC" secondAttribute="centerX" id="hcE-HD-hs3"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="lfp-Ei-zkC" secondAttribute="bottom" id="8f7-0S-gkb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lfp-Ei-zkC" secondAttribute="trailing" id="Bsk-LB-i3h"/>
+                            <constraint firstItem="lfp-Ei-zkC" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="DTG-3Q-bW1"/>
+                            <constraint firstItem="lfp-Ei-zkC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Hg5-5f-nPB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="changeTrafficLightButton" destination="U0J-7T-2eX" id="GAq-RT-nDz"/>
+                        <outlet property="greenLightView" destination="Oq0-S7-0zM" id="aGJ-rB-SU4"/>
+                        <outlet property="redLightView" destination="yGU-U0-e7y" id="dQ3-bq-l8B"/>
+                        <outlet property="yellowLightView" destination="WeV-T3-WUf" id="SqV-S3-VTD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="97.767857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

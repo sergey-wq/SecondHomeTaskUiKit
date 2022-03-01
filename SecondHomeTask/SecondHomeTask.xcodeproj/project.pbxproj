@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		F3DCC7B627CE8F6400F73ADC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DCC7B527CE8F6400F73ADC /* AppDelegate.swift */; };
 		F3DCC7B827CE8F6400F73ADC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DCC7B727CE8F6400F73ADC /* SceneDelegate.swift */; };
-		F3DCC7BA27CE8F6400F73ADC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DCC7B927CE8F6400F73ADC /* ViewController.swift */; };
+		F3DCC7BA27CE8F6400F73ADC /* TrafficLightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DCC7B927CE8F6400F73ADC /* TrafficLightViewController.swift */; };
 		F3DCC7BD27CE8F6400F73ADC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3DCC7BB27CE8F6400F73ADC /* Main.storyboard */; };
 		F3DCC7BF27CE8F6600F73ADC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3DCC7BE27CE8F6600F73ADC /* Assets.xcassets */; };
 		F3DCC7C227CE8F6600F73ADC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3DCC7C027CE8F6600F73ADC /* LaunchScreen.storyboard */; };
@@ -19,7 +19,7 @@
 		F3DCC7B227CE8F6400F73ADC /* SecondHomeTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecondHomeTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3DCC7B527CE8F6400F73ADC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F3DCC7B727CE8F6400F73ADC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F3DCC7B927CE8F6400F73ADC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F3DCC7B927CE8F6400F73ADC /* TrafficLightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLightViewController.swift; sourceTree = "<group>"; };
 		F3DCC7BC27CE8F6400F73ADC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F3DCC7BE27CE8F6600F73ADC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3DCC7C127CE8F6600F73ADC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,15 +56,23 @@
 		F3DCC7B427CE8F6400F73ADC /* SecondHomeTask */ = {
 			isa = PBXGroup;
 			children = (
+				F3DCC7C927CE99F200F73ADC /* TrafficLight */,
 				F3DCC7B527CE8F6400F73ADC /* AppDelegate.swift */,
 				F3DCC7B727CE8F6400F73ADC /* SceneDelegate.swift */,
-				F3DCC7B927CE8F6400F73ADC /* ViewController.swift */,
-				F3DCC7BB27CE8F6400F73ADC /* Main.storyboard */,
 				F3DCC7BE27CE8F6600F73ADC /* Assets.xcassets */,
 				F3DCC7C027CE8F6600F73ADC /* LaunchScreen.storyboard */,
 				F3DCC7C327CE8F6600F73ADC /* Info.plist */,
 			);
 			path = SecondHomeTask;
+			sourceTree = "<group>";
+		};
+		F3DCC7C927CE99F200F73ADC /* TrafficLight */ = {
+			isa = PBXGroup;
+			children = (
+				F3DCC7B927CE8F6400F73ADC /* TrafficLightViewController.swift */,
+				F3DCC7BB27CE8F6400F73ADC /* Main.storyboard */,
+			);
+			path = TrafficLight;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3DCC7BA27CE8F6400F73ADC /* ViewController.swift in Sources */,
+				F3DCC7BA27CE8F6400F73ADC /* TrafficLightViewController.swift in Sources */,
 				F3DCC7B627CE8F6400F73ADC /* AppDelegate.swift in Sources */,
 				F3DCC7B827CE8F6400F73ADC /* SceneDelegate.swift in Sources */,
 			);
